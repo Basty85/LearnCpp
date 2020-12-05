@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LearnCpp.cpp">
+    <ClCompile Include="Ex3.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
