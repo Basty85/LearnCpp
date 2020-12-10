@@ -1,11 +1,12 @@
-// Ex2.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
+// Ex1_7.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
 //
 
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //std::cout << "Hello World!\n"; /* Test /* nested */ comment */
+    std::cout << /* "*/" /* "/*" */;
 }
 
 // Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"

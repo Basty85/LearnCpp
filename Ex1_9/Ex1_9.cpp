@@ -1,11 +1,24 @@
-// Ex3.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
+// Ex1_9.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
 //
 
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int ix = 50, sum = 0, sum_for = 0;
+    while (ix <= 100) {
+        sum += ix;
+        ++ix;
+    }
+
+    for (int i = 50; i <= 100; ++i) {
+        sum_for += i;
+    }
+
+    std::cout << "Die While-Summe von 50 bis 100 ist: " << sum << std::endl;
+    std::cout << "Die For-Summe von 50 bis 100 ist: " << sum_for << std::endl;
+    
+    return 0;
 }
 
 // Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"

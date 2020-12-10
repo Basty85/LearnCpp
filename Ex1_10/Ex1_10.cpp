@@ -1,11 +1,23 @@
-// Ex1.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
+// Ex1_10.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
 //
 
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int i = 10;
+    while (i >= 0) {
+        std::cout << i << std::endl;
+        --i;
+    }
+
+    std::cout << std::endl;
+
+    for (int ix = 10; ix >= 0; --ix) {
+        std::cout << ix << std::endl;
+    }
+    
+    return 0;
 }
 
 // Programm ausführen: STRG+F5 oder Menüeintrag "Debuggen" > "Starten ohne Debuggen starten"
