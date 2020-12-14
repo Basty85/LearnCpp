@@ -12,7 +12,7 @@ int main()
 {
     string s1 = "Why";
     string s1_while = "Whyq";
-    std::size_t idx_while = 0;
+    std::string::size_type idx_while = 0;
     cout << s1_while[3] << endl;
     string s1_for = "Whyyy";
 
