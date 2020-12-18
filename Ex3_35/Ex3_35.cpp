@@ -38,10 +38,13 @@ int main()
     cout << "\n\n";
 
 
-    //Check for array equality!
+    //Check for array equality
     int va[] = { 2, 4, 5, 7, 6 };
     int vb[] = { 2, 4, 5, 7, 6 };
 
+    int *test1 = va;
+    int *test2 = begin(va);
+    cout << "test1_test2: " << test1 << " " << test2 << " " << *test1 << " " << *test2 << endl;
     auto laenge_va = end(va) - begin(va);
     auto laenge_vb = end(vb) - begin(vb);
 
@@ -53,7 +56,6 @@ int main()
                 cout << idx << ". " << "array element NOT equal" << "\n";
             }
         }
-
     } else {
         cout << "Arrays are NOT equal\n";
     }
