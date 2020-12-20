@@ -14,6 +14,16 @@ using std::vector;
 
 int main() {
 
+    using int_array = int[4];
+
+    string s1 = "Worschdsupp";
+    cout << "test stuff: ";
+    for (string::iterator it = s1.begin(); it != s1.end(); ++it) {
+        cout << *it;
+    }
+
+
+    cout << "\n\n";
     int ia[3][4] = {
         {0, 2, 4, 6},
         {8, 3, 5, 9},
@@ -36,7 +46,7 @@ int main() {
         {8, 3, 5, 9},
         {9, 3, 1, 2}};
 
-    for (int (*it_row)[4] = begin(ib); it_row != end(ib); ++it_row) {
+    for (int_array (*it_row) = begin(ib); it_row != end(ib); ++it_row) {
         for (int *it_col = begin(*it_row); it_col != end(*it_row); ++it_col) {
             cout << *it_col << " ";
         }
