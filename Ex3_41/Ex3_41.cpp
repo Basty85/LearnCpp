@@ -27,10 +27,21 @@ int main() {
     vector<int> vec2 = {3, 1, 7, 5, 3, 8};
     int arr2[vec2.size()];
 
+    //subsript
+    for (decltype(vec2.size()) idx = 0; idx != vec2.size(); ++idx) {
+        arr2[idx] = vec2[idx];
+    }
+    cout << "subscript result: ";
+    for (const auto &c : arr2) {
+        cout << c << " ";
+    }
+
+    //range for + counter var
     for (const auto &c : vec2) {
         arr2[cnt] = c;
         ++cnt;
     }
+    cout << "\n\n";
     for (const auto &c : arr2) {
         cout << c << " ";
     }
