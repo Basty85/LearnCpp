@@ -1,6 +1,7 @@
 #include <cstring>
 #include <iostream>
 #include <vector>
+#include <bitset>
 
 using std::begin;
 using std::cin;
@@ -11,6 +12,7 @@ using std::strcat;
 using std::strcpy;
 using std::string;
 using std::vector;
+using std::bitset;
 
 int main() {
 
@@ -46,6 +48,20 @@ int main() {
     string p1 = s + (s[s.size()-1] == 's' ? "" : "s");
 
     cout << p1 << endl;
+
+    unsigned long ul1 = 0b00000011;
+    unsigned long ul2 = 0b00000111;
+
+    unsigned long ul3 = ul1 & ul2;
+    ul3 = ul1 | ul2;
+    ul3 = ul1 && ul2;
+    ul3 = ul1 || ul2;
+    ul3 = ~ul3;
+    
+    bitset<64> y(ul3);
+    cout << sizeof(ul3) << " " << y << '\n';
+
+    cout << ul1 << " " << ul2 << " " << ul3 << endl; 
 
     return 0;
 }
